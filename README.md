@@ -1,8 +1,19 @@
 # backend
 
-## How to run
+## Installing Dependencies
 - clone the code in your local environment
 - in terminal type the cmd ``` npm i```, to install all dependencies
+
+## Hootsuite Dependencies
+- Make sure you have a developer account with hootsuite. Make sure you have an app on that account with access to the REST API.
+- Create a ```.env``` file in the root of the project. Inside the file create a variable named ```CREDENTIAL``` and put in your Hootsuite App's ```REST API Client ID:REST API Client Secret``` in base64.
+
+```
+   CREDENTIAL=base64(REST API Client ID:REST API Client Secret)
+```
+## Firebase Dependencies
+- Create a firebase account and get the 
+## How to run
 - to run the code type ``` npm run start``` and head over to http:localhost:8000/. 
 
 ## Endpoints
