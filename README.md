@@ -1,11 +1,5 @@
 # InSight: Hack the North 2021
-Describe Describe
 
- - Y
- - y
- - Y
- - y
-    
 ### For a video/devpost demonstration visit
 -  [Youtube Video]()
 
