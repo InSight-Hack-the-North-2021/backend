@@ -137,19 +137,36 @@ const face_scorer = (Faces, face_label_score, safe_search_score, food_score) => 
         'face_label_score': Math.floor(face_label_score),
         'safe_search_score': Math.floor(safe_search_score),
         'food_score': Math.floor(food_score),
-        'Final score': Math.floor(Math.floor(total_score))
+        'Final score': Math.floor(Math.floor(total_score)),
+        "labels": []
     }
     result['recommendation'] = recommendation;
     return result;
 }
 const scorePerson = (face_response, label_response, safe_search_score, food_score) => {
     if (face_response.faceAnnotations.length == 0) {
-        result = {
-            'Final score': Math.max(0, 10 + safe_search_score),
-            'recommendation': {
-                'msg': "Try to include yourself in the picture. Your loved ones should know how deighted you are."
-            }
-        }
+        var result = {
+            "blurred_scored": null,
+            "facial_attr_score": null,
+            "no_of_faces_score": null,
+            "face_label_score": null,
+            "safe_search_score": null,
+            "food_score": null,
+            // "hasPerson" : Boolean,
+            "Final score": null,
+            "recommendation": {
+                "joy": null,
+                "blurr": null,
+                "msg": null,
+                "anger": null,
+                "safesearch": null,
+                "faces": null
+            },
+            "labels": []
+        };
+
+        result['Final score'] = Math.max(0, 10 + safe_search_score),
+            result['recommendation']['msg'] = "Try to include yourself in the picture. Your loved ones should know how deighted you are."
     } else {
         var face_label_score = labelscorer(label_response.labelAnnotations);
         const array = [];
@@ -218,10 +235,8 @@ const score = async (req, res) => {
     const [object_response] = await client.objectLocalization('./' + image_name);
     const [face_response] = await client.faceDetection('./' + image_name);
     if (object_response.localizedObjectAnnotations.length == 0 && face_response.faceAnnotations.length == 0) {
-        result = {
-            'Final score': 10,
-        }
-        recommendation['msg'] = "Try to include yourself in the picture. Your loved ones should know what you are doing.";
+        result['Final score'] = 10,
+            recommendation['msg'] = "Try to include yourself in the picture. Your loved ones should know what you are doing.";
         result['recommendation'] = recommendation;
     }
     else {
@@ -282,4 +297,4 @@ const score = async (req, res) => {
 
 };
 
-module.exports = { score };
+module.exports = { score, scorePerson, food_scorer, safe_search_scorer };

@@ -1,9 +1,9 @@
 const { Router } = require("express");
-const { HootsuiteController } = require("../controllers");
+const { PremiumController } = require("../controllers");
 
 const router = Router();
 
 // The endpoints for routes /hootsuite
-router.post("/schedulePost/", HootsuiteController.schedulePost);
+router.get("/", PremiumController.score);
 
 module.exports = router;
