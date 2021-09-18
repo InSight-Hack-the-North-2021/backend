@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "## Do not make this repo public, we will create a new one for hack the north. Keep this one private",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temp-backend/backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temp-backend/backend/issues"
+  },
+  "homepage": "https://github.com/temp-backend/backend#readme",
+  "dependencies": {
+    "@google-cloud/vision": "^2.4.0",
+    "axios": "^0.21.4",
+    "blob": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "delay": "^5.0.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.11.1",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "md5": "^2.3.0",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "salted-md5": "^4.0.2",
+    "url-search-params": "^1.1.0"
+  }
+}
