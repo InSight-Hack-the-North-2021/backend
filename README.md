@@ -1,7 +1,5 @@
 # backend
 
-## Do not make this repo public, we will create a new one for hack the north. Keep this one private
-
 ## How to run
 - clone the code in your local environment
 - in terminal type the cmd ``` npm i```, to install all dependencies
