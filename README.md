@@ -1,6 +1,17 @@
 # backend
 
-## 1. Installing Dependencies
+### For a video/devpost demonstration visit
+-  [Youtube Video]()
+
+# Table of Contents
+- [Installations](#installations)
+- [How To Run](#run)
+- [Endpoints](#endpoints)
+- [Future Features](#future-features)
+- [Contact Us](#contact-us)
+
+<a name="installations"/>
+## 1. Installations
 - ### General
    - clone the code in your local environment
    - in terminal type the cmd ``` npm i```, to install all dependencies
@@ -31,9 +42,11 @@
    }
    ```
 
+<a name="run"/>
 ## 2. How to run
 - to run the code type ``` npm run start``` and head over to http:localhost:8000/. 
 
+<a name="endpoints"/>
 ## 3. Endpoints
 
 ### 1. Scoring and Recommendation
