@@ -119,7 +119,7 @@ const schedulePost = async(req, res) => {
      
     console.log("\n\n5\n\n");
         const id =  await uploadStatus()
-        const text = req.params.text
+        const text = req.body.text
             console.log("Here is the id", id.toString());
             const access_token = (await db.collection('refresh_token').doc("1").get()).data().access_token
             console.log("Access token", access_token);

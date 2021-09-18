@@ -20,10 +20,11 @@ app.use(express.static(__dirname + "/public"))
 
 // Routes
 
-const { ScoreRoutes, HootsuiteRoutes } = require("./routes");
+const { ScoreRoutes, HootsuiteRoutes,  PremiumRoutes} = require("./routes");
 
 app.use("/image", ScoreRoutes);
 app.use("/hootsuite", HootsuiteRoutes);
+app.use("/premium", PremiumRoutes);
 
 app.listen(port, (req,res)=>{
   console.info(`Running on ${port}`)
