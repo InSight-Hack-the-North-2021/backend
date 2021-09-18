@@ -1,4 +1,4 @@
-# backend
+# InSight: Hack the North 2021
 
 ### For a video/devpost demonstration visit
 -  [Youtube Video]()
@@ -10,7 +10,9 @@
 - [Future Features](#future-features)
 - [Contact Us](#contact-us)
 
+
 <a name="installations"/>
+
 ## 1. Installations
 - ### General
    - clone the code in your local environment
@@ -43,10 +45,12 @@
    ```
 
 <a name="run"/>
+
 ## 2. How to run
 - to run the code type ``` npm run start``` and head over to http:localhost:8000/. 
 
 <a name="endpoints"/>
+
 ## 3. Endpoints
 
 ### 1. Scoring and Recommendation
@@ -83,5 +87,11 @@
   - ```:text``` is a parameter, it contains the text that user wants to enter with a post
   - Response - If it return status 200 its all good, for any other status pls give an error.
     
+<a name="future-features"/>
 
+## 4. Future Features
+
+<a name="contact-us"/>
+
+## 5. Contact Us
 
