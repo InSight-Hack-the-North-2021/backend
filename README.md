@@ -1,7 +1,8 @@
 # InSight: Hack the North 2021
 
 ### For a video/devpost demonstration visit
--  [Youtube Video]()
+-  [Youtube Video](https://youtu.be/pKAgeB-cH7U)
+-  [Devpost](https://devpost.com/software/insight-9x87v2)
 
 # Table of Contents
 - [Installations](#installations)
