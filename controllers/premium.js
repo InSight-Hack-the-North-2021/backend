@@ -6,6 +6,7 @@ const { Storage } = require('@google-cloud/storage');
 
 const score = async (req, res) => {
     // The ID of your GCS bucket
+    console.log("reached");
     const bucketName = 'makemecool.appspot.com';
     const storage = new Storage();
 
@@ -123,6 +124,16 @@ const score = async (req, res) => {
     const new_result = JSON.stringify(save_results[final_image]);
     console.log(new_result);
 
+    const download = require('image-downloader');
+
+    function downloadImage(url) {
+        return download.image({
+        url,
+        dest: './public/images/emotion.png' 
+        });
+    }
+
+    downloadImage(save_results[final_image]["image_url"])
     res.json(save_results[final_image])
 
 };
