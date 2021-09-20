@@ -96,3 +96,4 @@
 
 ## 5. Contact Us
 
+Email : rishi.koul@mail.utoronto.ca
