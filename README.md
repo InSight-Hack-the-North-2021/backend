@@ -92,6 +92,9 @@
 
 ## 4. Future Features
 
+- Right now all users can use a Premium Account for free, so we want to add a payment method along with an option of 5 days free trial
+- We plan to make a Mobile app, and make the InSight a perfect Social Media assistant by including a daily recommendation system that guides users by computing a posting pattern based on their recent posts which have done well.
+
 <a name="contact-us"/>
 
 ## 5. Contact Us
